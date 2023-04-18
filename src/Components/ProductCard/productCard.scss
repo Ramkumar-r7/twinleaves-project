@@ -1,0 +1,109 @@
+:root {
+  --primary: green;
+  --cart: #f0a000;
+}
+
+#productCard {
+  width: 70%;
+  .header {
+    padding: 5px;
+    .header-title {
+      font-size: 16px;
+    }
+    .green-border-container {
+      height: 2px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.975);
+      .green-border {
+        height: 2px;
+        width: 20%;
+        background-color: rgb(81, 185, 46);
+      }
+    }
+    
+  }
+
+  .offer-box {
+    box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.15);
+    padding: 5px;
+    .offer {
+      color: red;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      text-align: right;
+      font-size: 14px;
+    }
+  }
+  .product-freshness {
+    font-size: 12px;
+  }
+  .product-img {
+    object-fit: cover;
+  }
+  .active-box {
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--primary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .active-dot {
+      width: 10px;
+      height: 10px;
+      display: flex;
+      border-radius: 50%;
+      background-color: var(--primary);
+    }
+  }
+  .product-name {
+    font-size: 14px;
+  }
+
+  .MuiInputBase-input {
+    width: 13vmax;
+    font-size: 0.75rem;
+    padding: 5px;
+  }
+  .MuiOutlinedInput-root {
+    border: 1px solid #c9c9c9;
+    border-left: none;
+    border: 5px;
+  }
+  .product-detail-box {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.01);
+    background-color: #c4c2b679;
+    padding: 5px;
+    width: 100%;
+    .offer-strike {
+      font-size: 12px;
+      text-decoration: line-through;
+    }
+    .current-price {
+      font-size: 16px;
+    }
+    .delivery {
+      font-size: 14px;
+      color: grey;
+    }
+    .delivery-time {
+      padding-left: 40px;
+      font-size: 14px;
+      color: grey;
+    }
+    .qty-name {
+      font-size: 12px;
+      height: 25px;
+    }
+    .qty-field {
+      width: 2vw;
+      font-size: 12px;
+      height: 25px;
+    }
+    .btn-add {
+      margin-left: 5px;
+      font-size: 12px;
+      height: 25px;
+      background-color: var(--cart);
+    }
+  }
+}
